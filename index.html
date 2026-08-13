@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Math Quest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HALAMAN AWAL
+    ========================== -->
+
+    <section id="halamanAwal" class="halaman aktif">
+
+        <div class="bintang bintang-1">✦</div>
+        <div class="bintang bintang-2">✧</div>
+        <div class="bintang bintang-3">✦</div>
+        <div class="bintang bintang-4">✧</div>
+        <div class="bintang bintang-5">✦</div>
+        <div class="bintang bintang-6">✧</div>
+
+        <div class="planet-dekorasi"></div>
+
+        <div class="isi-awal">
+
+            <div class="pesawat">🚀</div>
+
+            <h1>Math Quest</h1>
+
+            <h2>Petualangan Matematika di Luar Angkasa</h2>
+
+            <p>
+                Selamat datang, Penjelajah!
+                Bersiaplah menjelajahi galaksi,
+                memecahkan tantangan matematika,
+                dan menemukan berbagai rahasia di luar angkasa.
+            </p>
+
+            <button id="tombolMulai">
+                🚀 Mulai Petualangan
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PETA GALAKSI
+    ========================== -->
+
+    <section id="petaGalaksi" class="halaman">
+
+        <div class="bintang bintang-1">✦</div>
+        <div class="bintang bintang-2">✧</div>
+        <div class="bintang bintang-3">✦</div>
+        <div class="bintang bintang-4">✧</div>
+        <div class="bintang bintang-5">✦</div>
+        <div class="bintang bintang-6">✧</div>
+
+        <div class="peta-container">
+
+            <div class="bagian-atas">
+
+                <button id="tombolKembali" class="tombol-kembali">
+                    ← Kembali
+                </button>
+
+                <div class="judul-peta">
+                    <span>🌌</span>
+                    <div>
+                        <h1>Galaksi Math Quest</h1>
+                        <p>Pilih planet untuk memulai misi belajarmu!</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Pesan Tawakkal -->
+
+            <div class="pesan-tawakkal">
+
+                <div class="ikon-tawakkal">🌙</div>
+
+                <div>
+                    <h3>Pesan Penjelajah</h3>
+
+                    <p>
+                        Berusahalah sebaik mungkin dalam setiap misi.
+                        Jika mengalami kesulitan, jangan menyerah.
+                        Terus belajar, berdoa, dan bertawakkal.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Peta Planet -->
+
+            <div class="peta-planet">
+
+
+                <!-- Planet 1 -->
+
+                <div class="planet-misi planet-bilangan">
+
+                    <button class="planet-tombol" id="planetBilangan">
+
+                        <span class="planet-emoji">🌍</span>
+
+                        <span class="status-planet">
+                            🔓 TERBUKA
+                        </span>
+
+                    </button>
+
+                    <h3>Planet Bilangan</h3>
+
+                    <p>
+                        Bilangan dan operasi matematika
+                    </p>
+
+                </div>
+
+
+                <!-- Planet 2 -->
+
+                <div class="planet-misi planet-aljabar">
+
+                    <button class="planet-tombol terkunci" id="planetAljabar">
+
+                        <span class="planet-emoji">🪐</span>
+
+                        <span class="status-planet" id="statusAljabar">
+    🔒 TERKUNCI
+</span>
+
+                    </button>
+
+                    <h3>Planet Aljabar</h3>
+
+                    <p>
+                        Bentuk aljabar dan persamaan
+                    </p>
+
+                </div>
+
+
+                <!-- Planet 3 -->
+
+                <div class="planet-misi planet-fungsi">
+
+                    <button class="planet-tombol terkunci" id="planetFungsi">
+
+                        <span class="planet-emoji">🔵</span>
+
+                        <span class="status-planet">
+                            🔒 TERKUNCI
+                        </span>
+
+                    </button>
+
+                    <h3>Planet Fungsi</h3>
+
+                    <p>
+                        Fungsi dan hubungan antar variabel
+                    </p>
+
+                </div>
+
+
+                <!-- Planet 4 -->
+
+                <div class="planet-misi planet-geometri">
+
+                    <button class="planet-tombol terkunci" id="planetGeometri">
+
+                        <span class="planet-emoji">🌕</span>
+
+                        <span class="status-planet">
+                            🔒 TERKUNCI
+                        </span>
+
+                    </button>
+
+                    <h3>Planet Geometri</h3>
+
+                    <p>
+                        Bangun, sudut, dan pengukuran
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="petunjuk">
+
+                <span>⭐</span>
+
+                Selesaikan misi untuk membuka planet berikutnya.
+
+                <span>🚀</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         PLANET BILANGAN
+    ========================== -->
+
+    <section id="halamanBilangan" class="halaman">
+
+        <div class="bintang bintang-1">✦</div>
+        <div class="bintang bintang-2">✧</div>
+        <div class="bintang bintang-3">✦</div>
+        <div class="bintang bintang-4">✧</div>
+
+
+        <div class="materi-container">
+
+            <!-- Tombol kembali -->
+
+            <button id="kembaliKePeta" class="tombol-kembali">
+                ← Kembali ke Galaksi
+            </button>
+
+
+            <!-- Judul -->
+
+            <div class="judul-materi">
+
+                <div class="ikon-planet-materi">
+                    🌍
+                </div>
+
+                <div>
+                    <h1>Planet Bilangan</h1>
+
+                    <p>
+                        Misi pertama: Kuasai bilangan!
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Materi -->
+
+            <div class="kartu-materi">
+
+                <div class="label-materi">
+                    📖 MATERI SINGKAT
+                </div>
+
+                <h2>Bilangan Berpangkat</h2>
+
+                <p>
+                    Bilangan berpangkat adalah perkalian berulang
+                    dari suatu bilangan yang sama.
+                </p>
+
+
+                <div class="rumus">
+
+                    <strong>Rumus:</strong>
+
+                    <br><br>
+
+                    aᵐ = a × a × a × ... × a
+
+                    <br>
+
+                    <small>
+                        sebanyak m faktor
+                    </small>
+
+                </div>
+
+
+                <div class="contoh-materi">
+
+                    <strong>💡 Contoh:</strong>
+
+                    <p>
+                        2³ = 2 × 2 × 2 = 8
+                    </p>
+
+                </div>
+
+
+                <div class="tips-materi">
+
+                    ⭐ Ingat:
+                    Pangkat menunjukkan berapa kali
+                    bilangan tersebut dikalikan dengan dirinya sendiri.
+
+                </div>
+
+            </div>
+
+
+            <!-- Pesan Tawakkal -->
+
+            <div class="tawakkal-belajar">
+
+                <div class="tawakkal-icon">
+                    🌙
+                </div>
+
+                <div>
+
+                    <h3>Bekal Penjelajah</h3>
+
+                    <p>
+                        Tidak harus langsung bisa.
+                        Pahami langkahnya, terus berusaha,
+                        dan jangan takut melakukan kesalahan.
+                        Setelah berusaha sebaik mungkin,
+                        kita belajar untuk bertawakkal.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tombol mulai -->
+
+            <button id="mulaiMisiBilangan" class="tombol-misi">
+
+                🚀 Mulai Misi Bilangan
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     HALAMAN MISI BILANGAN
+========================== -->
+
+<section id="halamanMisi" class="halaman">
+
+    <div class="misi-container">
+
+        <!-- Bagian atas -->
+
+        <div class="misi-header">
+
+            <button id="keluarMisi" class="tombol-kembali">
+                ← Keluar
+            </button>
+
+            <div class="status-pemain">
+
+                <div>
+                    ⭐ Skor:
+                    <strong id="skor">0</strong>
+                </div>
+
+                <div>
+                    ❤️ Energi:
+                    <strong id="energi">3</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Judul misi -->
+
+        <div class="judul-misi">
+
+            <div class="ikon-misi">
+                🚀
+            </div>
+
+            <div>
+
+                <h1>Misi Bilangan</h1>
+
+                <p id="nomorSoal">
+                    Tantangan 1 dari 5
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Kartu soal -->
+
+        <div class="kartu-soal">
+
+            <div class="label-soal">
+                🧠 TANTANGAN MATEMATIKA
+            </div>
+
+
+            <h2 id="teksSoal">
+                Berapakah hasil dari 2³?
+            </h2>
+
+
+            <!-- Pilihan jawaban -->
+
+            <div id="pilihanJawaban" class="pilihan-jawaban">
+
+                <button class="jawaban" data-jawaban="6">
+                    6
+                </button>
+
+                <button class="jawaban" data-jawaban="8">
+                    8
+                </button>
+
+                <button class="jawaban" data-jawaban="10">
+                    10
+                </button>
+
+                <button class="jawaban" data-jawaban="12">
+                    12
+                </button>
+
+            </div>
+
+
+            <!-- Hasil jawaban -->
+
+            <div id="hasilJawaban" class="hasil-jawaban">
+
+            </div>
+
+
+            <!-- Tombol lanjut -->
+
+            <button
+                id="tombolLanjut"
+                class="tombol-lanjut"
+                style="display: none;"
+            >
+                Lanjutkan 🚀
+            </button>
+
+        </div>
+
+
+        <!-- Pesan tawakkal -->
+
+        <div id="pesanTawakkal" class="pesan-tawakkal">
+
+            🌙
+
+            <div>
+
+                <strong>Bekal Penjelajah</strong>
+
+                <p>
+                    Tidak apa-apa jika belum berhasil.
+                    Kesalahan adalah bagian dari proses belajar.
+                    Teruslah berusaha, belajar dari kesalahan,
+                    lalu bertawakkal kepada Allah.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     HALAMAN PLANET ALJABAR
+========================== -->
+
+<section id="halamanAljabar" class="halaman">
+
+    <div class="materi-container">
+
+        <!-- Tombol kembali -->
+
+        <button id="kembaliDariAljabar" class="tombol-kembali">
+            ← Kembali ke Galaksi
+        </button>
+
+
+        <!-- Judul -->
+
+        <div class="judul-materi">
+
+            <div class="ikon-planet-materi">
+                🪐
+            </div>
+
+            <div>
+
+                <h1>Planet Aljabar</h1>
+
+                <p>
+                    Misi kedua: Taklukkan dunia variabel!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Materi -->
+
+        <div class="kartu-materi">
+
+            <div class="label-materi">
+                📖 MATERI SINGKAT
+            </div>
+
+            <h2>Mengenal Bentuk Aljabar</h2>
+
+            <p>
+                Aljabar menggunakan huruf atau simbol
+                untuk mewakili suatu bilangan yang belum diketahui.
+            </p>
+
+
+            <div class="rumus">
+
+                <strong>Bentuk umum:</strong>
+
+                <br><br>
+
+                ax + b
+
+            </div>
+
+
+            <div class="contoh-materi">
+
+                <strong>💡 Contoh:</strong>
+
+                <p>
+                    3x + 5
+                </p>
+
+                <p>
+                    Pada bentuk tersebut:
+                </p>
+
+                <p>
+                    <strong>3</strong> = koefisien
+                    <br>
+                    <strong>x</strong> = variabel
+                    <br>
+                    <strong>5</strong> = konstanta
+                </p>
+
+            </div>
+
+
+            <div class="tips-materi">
+
+                ⭐ Ingat:
+
+                Variabel adalah simbol yang digunakan
+                untuk mewakili nilai yang belum diketahui.
+
+            </div>
+
+        </div>
+
+
+        <!-- Tawakkal -->
+
+        <div class="tawakkal-belajar">
+
+            <div class="tawakkal-icon">
+                🌙
+            </div>
+
+            <div>
+
+                <h3>Bekal Penjelajah</h3>
+
+                <p>
+                    Setiap soal adalah kesempatan untuk belajar.
+                    Jika terasa sulit, jangan langsung menyerah.
+                    Pahami langkahnya, terus berusaha,
+                    dan bertawakkal setelah melakukan yang terbaik.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tombol -->
+
+        <button
+            id="mulaiMisiAljabar"
+            class="tombol-misi"
+        >
+
+            🚀 Mulai Misi Aljabar
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+     HALAMAN FUNGSI
+====================================== -->
+
+<section id="halamanFungsi" class="halaman">
+
+    <div class="materi-container">
+
+        <button
+            id="kembaliDariFungsi"
+            class="tombol-kembali"
+        >
+            ← Kembali ke Peta
+        </button>
+
+
+        <div class="judul-materi">
+
+            <div class="ikon-materi">
+                🟣
+            </div>
+
+            <div>
+
+                <h1>Planet Fungsi</h1>
+
+                <p>
+                    Misi baru menantimu, Penjelajah!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MATERI SINGKAT -->
+
+        <div class="kartu-materi">
+
+            <h2>📖 Bekal Penjelajah</h2>
+
+            <p>
+                Sebelum menjalankan misi,
+                pahami konsep fungsi terlebih dahulu.
+            </p>
+
+
+            <div class="kotak-rumus">
+
+                <h3>💡 Apa itu fungsi?</h3>
+
+                <p>
+                    Fungsi adalah hubungan antara
+                    suatu input dan output.
+                </p>
+
+                <p class="rumus">
+                    f(x) = y
+                </p>
+
+            </div>
+
+
+            <div class="kotak-rumus">
+
+                <h3>🚀 Contoh</h3>
+
+                <p>
+                    Jika:
+                </p>
+
+                <p class="rumus">
+                    f(x) = 2x + 1
+                </p>
+
+                <p>
+                    dan x = 3, maka:
+                </p>
+
+                <p class="rumus">
+                    f(3) = 2(3) + 1
+                </p>
+
+                <p class="rumus">
+                    f(3) = 7
+                </p>
+
+            </div>
+
+
+            <div class="kotak-tawakkal">
+
+                <h3>🌙 Bekal Tawakkal</h3>
+
+                <p>
+                    Tidak semua soal harus langsung
+                    bisa kamu jawab.
+                </p>
+
+                <p>
+                    Pahami langkahnya, berusaha
+                    sebaik mungkin, lalu bertawakkal
+                    kepada Allah.
+                </p>
+
+            </div>
+
+
+            <button
+                id="mulaiMisiFungsi"
+                class="tombol-mulai-misi"
+            >
+                🚀 Mulai Misi Fungsi
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+     HALAMAN GEOMETRI
+====================================== -->
+
+<section id="halamanGeometri" class="halaman">
+
+    <div class="materi-container">
+
+        <!-- TOMBOL KEMBALI -->
+
+        <button
+            id="kembaliDariGeometri"
+            class="tombol-kembali"
+        >
+            ← Kembali ke Peta
+        </button>
+
+
+        <!-- JUDUL -->
+
+        <div class="judul-materi">
+
+            <div class="ikon-materi">
+                🌕
+            </div>
+
+            <div>
+
+                <h1>Planet Geometri</h1>
+
+                <p>
+                    Bangun, sudut, dan pengukuran
+                    menantimu, Penjelajah!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MATERI SINGKAT -->
+
+        <div class="kartu-materi">
+
+            <h2>📖 Bekal Penjelajah</h2>
+
+            <p>
+                Sebelum menjalankan misi,
+                pahami konsep dasar geometri
+                terlebih dahulu.
+            </p>
+
+
+            <div class="kotak-rumus">
+
+                <h3>📐 Apa itu Geometri?</h3>
+
+                <p>
+                    Geometri adalah cabang matematika
+                    yang mempelajari bentuk, ukuran,
+                    sudut, jarak, dan posisi.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOMBOL MULAI MISI -->
+
+        <button
+            id="mulaiMisiGeometri"
+            class="tombol-misi"
+        >
+            🚀 Mulai Misi Geometri
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     HALAMAN MISI ALJABAR
+========================== -->
+
+<section id="halamanMisiAljabar" class="halaman">
+
+    <div class="misi-container">
+
+        <div class="misi-header">
+
+            <button id="keluarMisiAljabar" class="tombol-kembali">
+                ← Keluar
+            </button>
+
+            <div class="status-pemain">
+
+                <div>
+                    ⭐ Skor:
+                    <strong id="skorAljabar">0</strong>
+                </div>
+
+                <div>
+                    ❤️ Energi:
+                    <strong id="energiAljabar">3</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="judul-misi">
+
+            <div class="ikon-misi">
+                🪐
+            </div>
+
+            <div>
+
+                <h1>Misi Aljabar</h1>
+
+                <p id="nomorSoalAljabar">
+                    Tantangan 1 dari 5
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="kartu-soal">
+
+            <div class="label-soal">
+                🧠 TANTANGAN ALJABAR
+            </div>
+
+            <h2 id="teksSoalAljabar">
+                Jika x = 5, berapakah nilai dari x + 3?
+            </h2>
+
+
+            <div
+                id="pilihanJawabanAljabar"
+                class="pilihan-jawaban"
+            >
+
+            </div>
+
+
+            <div
+                id="hasilJawabanAljabar"
+                class="hasil-jawaban"
+            >
+
+            </div>
+
+
+            <button
+                id="tombolLanjutAljabar"
+                class="tombol-lanjut"
+                style="display: none;"
+            >
+                Lanjutkan 🚀
+            </button>
+
+        </div>
+
+
+        <div class="pesan-tawakkal">
+
+            🌙
+
+            <div>
+
+                <strong>Bekal Penjelajah</strong>
+
+                <p>
+                    Jika jawabanmu belum tepat,
+                    jangan takut untuk mencoba lagi.
+                    Kesalahan adalah kesempatan untuk belajar.
+                    Terus berusaha dan bertawakkal kepada Allah.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+     HALAMAN MISI FUNGSI
+====================================== -->
+
+<section id="halamanMisiFungsi" class="halaman">
+
+    <div class="misi-container">
+
+        <!-- BAGIAN ATAS -->
+
+        <div class="misi-header">
+
+            <button
+                id="keluarMisiFungsi"
+                class="tombol-kembali"
+            >
+                ← Keluar
+            </button>
+
+
+            <div class="status-pemain">
+
+                <div>
+                    ⭐ Skor:
+                    <strong id="skorFungsi">0</strong>
+                </div>
+
+                <div>
+                    ❤️ Energi:
+                    <strong id="energiFungsi">3</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JUDUL MISI -->
+
+        <div class="judul-misi">
+
+            <div class="ikon-misi">
+                🟣
+            </div>
+
+            <div>
+
+                <h1>Misi Fungsi</h1>
+
+                <p id="nomorSoalFungsi">
+                    Tantangan 1 dari 5
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- KARTU SOAL -->
+
+        <div class="kartu-soal">
+
+            <div class="label-soal">
+                🧠 TANTANGAN FUNGSI
+            </div>
+
+
+            <h2 id="teksSoalFungsi">
+                Jika f(x) = 2x + 1,
+                berapakah nilai f(3)?
+            </h2>
+
+
+            <div
+                id="pilihanJawabanFungsi"
+                class="pilihan-jawaban"
+            >
+            </div>
+
+
+            <div
+                id="hasilJawabanFungsi"
+                class="hasil-jawaban"
+            >
+            </div>
+
+
+            <button
+                id="tombolLanjutFungsi"
+                class="tombol-lanjut"
+                style="display: none;"
+            >
+                Lanjutkan 🚀
+            </button>
+
+        </div>
+
+
+        <!-- PESAN TAWAKKAL -->
+
+        <div class="pesan-tawakkal">
+
+            🌙
+
+            <div>
+
+                <strong>Bekal Penjelajah</strong>
+
+                <p>
+                    Tidak apa-apa jika jawabanmu
+                    belum tepat.
+                    Pahami pembahasannya,
+                    perbaiki langkahmu,
+                    terus berusaha dan bertawakkal
+                    kepada Allah.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================
+     HALAMAN MISI GEOMETRI
+====================================== -->
+
+<section id="halamanMisiGeometri" class="halaman">
+
+    <div class="misi-container">
+
+        <div class="misi-header">
+
+            <button
+                id="keluarMisiGeometri"
+                class="tombol-kembali"
+            >
+                ← Keluar
+            </button>
+
+            <div class="status-pemain">
+
+                <div>
+                    ⭐ Skor:
+                    <strong id="skorGeometri">0</strong>
+                </div>
+
+                <div>
+                    ❤️ Energi:
+                    <strong id="energiGeometri">3</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="judul-misi">
+
+            <div class="ikon-misi">
+                🌕
+            </div>
+
+            <div>
+
+                <h1>Misi Geometri</h1>
+
+                <p id="nomorSoalGeometri">
+                    Tantangan 1 dari 5
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="kartu-soal">
+
+            <div class="label-soal">
+                🧠 TANTANGAN GEOMETRI
+            </div>
+
+            <h2 id="teksSoalGeometri">
+                Sebuah segitiga memiliki
+                tiga sudut. Jumlah ketiga
+                sudut tersebut adalah ...
+            </h2>
+
+
+            <div
+                id="pilihanJawabanGeometri"
+                class="pilihan-jawaban"
+            ></div>
+
+
+            <div
+                id="hasilJawabanGeometri"
+                class="hasil-jawaban"
+            ></div>
+
+
+            <button
+                id="tombolLanjutGeometri"
+                class="tombol-lanjut"
+                style="display: none;"
+            >
+                Lanjutkan 🚀
+            </button>
+
+        </div>
+
+
+        <div class="pesan-tawakkal">
+
+            🌙
+
+            <div>
+
+                <strong>Bekal Penjelajah</strong>
+
+                <p>
+                    Jika jawabanmu belum tepat,
+                    jangan takut untuk mencoba lagi.
+                    Kesalahan adalah kesempatan
+                    untuk belajar.
+                    Terus berusaha dan bertawakkal
+                    kepada Allah.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+
