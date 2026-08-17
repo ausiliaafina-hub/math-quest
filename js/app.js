@@ -1170,6 +1170,28 @@ const keluarMisiAljabar =
 document.getElementById("keluarMisiAljabar");
 
 // ======================================
+// KELUAR DARI MISI ALJABAR
+// ======================================
+
+if (keluarMisiAljabar) {
+
+    keluarMisiAljabar.addEventListener("click", function () {
+
+        const halamanMisiAljabar =
+            document.getElementById("halamanMisiAljabar");
+
+        const petaGalaksi =
+            document.getElementById("petaGalaksi");
+
+        halamanMisiAljabar.classList.remove("aktif");
+
+        petaGalaksi.classList.add("aktif");
+
+    });
+
+}
+
+// ======================================
 // MULAI PERMAINAN ALJABAR
 // ======================================
 
